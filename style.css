@@ -3,13 +3,20 @@
   src: url(assets/Norse-Bold.otf);
 }
 
+@font-face {
+  font-family: Cal-Sans;
+  src: url(assets/CalSans-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: Cal-Sans;
 }
 
 body {
   display: flex;
+  background-color: whitesmoke;
 }
 
 .odin {
@@ -54,4 +61,69 @@ body {
 .background-image {
   width: 600px;
   height: 800px;
+}
+
+.secondary-container {
+  margin: 120px 0px 200px 0px;
+}
+
+.primary-text {
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.secondary-text {
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+
+.teritary-text {
+  margin-bottom: 20px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px 100vw 20px 40px;
+}
+
+.name-section,
+.other-section,
+.password-section {
+  display: flex;
+  gap: 40px;
+}
+
+.credentials {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.6rem;
+}
+input {
+  width: 180px;
+  height: 22px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+}
+
+.create-account-button {
+  margin-top: 20px;
+  margin-left: 40px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 6px;
+  border-style: none;
+  background-color: #596d48;
+  color: white;
+}
+
+.login-text {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.login-text > a {
+  color: #596d48;
+  text-decoration: none;
 }
